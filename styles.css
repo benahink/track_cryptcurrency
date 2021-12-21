@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: #35046a;
 }
 
 ul {
@@ -20,22 +21,19 @@ img {
   height: auto;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  background-image: url(./src/img/background.png);
-  background-position: center;
-  background-size: cover;
-  padding: 0 7%;
-  color: #fff;
-}
-
 .nav__menu {
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  background: #6311bc;
+  box-shadow: #32325d40 0px 30px 60px -12px inset,
+    #0000004d 0px 18px 36px -18px inset;
+}
+
+nav h1 {
+  color: #fff;
 }
 
 .logo {
@@ -48,23 +46,29 @@ img {
   margin: 10px 20px;
 }
 
+nav .btn,
 .nav__link {
   color: #fff;
 }
 
-.btn {
-  color: #fff;
+nav .btn {
   border: solid 3px #fff;
   padding: 10px 30px;
   border-radius: 20px;
 }
 
-.main__content {
-  margin-top: 12%;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 7%;
 }
 
 .main__content h1 {
-  font-size: 5em;
+  padding-top: 15%;
+  font-size: 3em;
   margin-bottom: 15px;
 }
 
@@ -78,10 +82,17 @@ img {
   padding-bottom: 2rem;
 }
 
+.main__content .btn {
+  color: #35046a;
+  border: solid 3px #35046a;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
 .porfolio__container {
   position: absolute;
   bottom: 50px;
-  right: 10%;
+  right: 5%;
   display: flex;
   align-items: center;
 }
@@ -89,12 +100,14 @@ img {
 .coin {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 20px;
   margin: 0 15px;
   color: #ff960b;
   padding: 20px 30px;
-  border: 1px solid #fff;
+  border: 1px solid #0f002b;
   border-radius: 8px;
+  background: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .coin img {
@@ -103,6 +116,6 @@ img {
 }
 
 .coin h3 {
-  color: #fff;
+  color: #35046a;
   margin-bottom: 5px;
 }
